@@ -8,6 +8,7 @@ class Basic_Specifications:
         self.star_rating = star_rating
         self.suitable_sizes = "Suitable Sizes"
 
+    #by veena
     def ac_information(self):
         print(f"This AC is from the {self.ac_brand} brand.")
         print(f"It comes with a {self.warranty}years warranty.")        
@@ -55,7 +56,7 @@ class Information:
         from contextlib import redirect_stdout
 
 
-
+        
         with open(filename_info, "w") as file_name_t:
             with redirect_stdout(file_name_t):
                 information = Information()
