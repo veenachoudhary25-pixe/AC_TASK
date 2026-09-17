@@ -73,7 +73,7 @@ class Chack_AC:
 
 filename_tem = "/home/ng/Task/temperature.txt"
 filename_mode = "/home/ng/Task/mode.txt"
-# filename_info = "/home/ng/Task/information.txt"
+
 list = []
 disn = {}
 while True:
@@ -100,7 +100,6 @@ while True:
                     temperature = int(temperature)
                     chack_ac.ac.set_temperature(temperature)
                 
-
                     
             elif ask == "2":
                 change_tem = input("How much AC temperature up or down? Or no? : ")
@@ -111,7 +110,7 @@ while True:
         
 
             elif ask == "3":
-                # print(f"AC is running in {chack_ac.ac.operating_mode} mode.")
+
                 change_mode = int(input("Please select the AC mode:\n1. Cooling Mode — 20°C\n2. Dry Mode — 25°C \n3. Fan Mode — 28° \n4. Auto Mode — 24°C \n5. Heat Mode — 30°C \n6. Nothing \nEnter the option number (1–6):"))
                 if change_mode != 6 :
                     chack_ac.ac.change_mode(change_mode)
@@ -129,7 +128,7 @@ while True:
             filename = 'numbers.json'
             with open(filename, 'w') as f_obj:
                 json.dump(disn, f_obj)
-                # f_obj.write(',')
+
             ask =  input("\nWould you like to know or change anything about the AC? \n1. Set Temperature\n2. Change Temperature\n3. Change Mode \n4. Get Information \n5. Nothing \nEnter the number of your choice: ")
         
 
