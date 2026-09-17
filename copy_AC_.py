@@ -24,10 +24,6 @@ class AC:
         if 'operating_mode' in disn:
             del disn["operating_mode"]
 
-        
-
-
-
 
     def change_mode(self,change_mode,):
             
@@ -106,8 +102,6 @@ while True:
                 
 
                     
-
-                    
             elif ask == "2":
                 change_tem = input("How much AC temperature up or down? Or no? : ")
                 while change_tem != "no":
@@ -129,9 +123,6 @@ while True:
             else:
                 print("Sorry but i don't have that information!")
 
-            # dis = {}
-            # dis[temperature] = temperature
-            # print(disn)
             import json
             
             list.append(disn)
